@@ -8,6 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="/css/styles.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sanswght@300&display=swap" rel="stylesheet">
+  <style>
+    @media only screen and (min-width: 960px) {}
+
+    @media only screen and (max-width: 960px) {}
+
+    @media only screen and (max-width: 600px) {}
+  </style>
 </head>
 
 <body>
@@ -45,7 +52,6 @@
                 </tr>
               </table>
               <!-- end of left column -->
-
               <!-- start of right column -->
               <table class="header-right" width="50%" align="right" cellspacing="0" cellpadding="0" border="0"
                 style="display:inline-block; background: white; padding-bottom: 2px;">
@@ -83,7 +89,7 @@
           <!-- end of header row -->
           <!-- start of lets you row -->
           <tr>
-            <td style="background: #FCFBFC;">
+            <td class="lets-you-row" style="background: #FCFBFC;">
               <h3
                 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 36px; font-weight: 300; text-transform:none; font-size: 28px; text-align:center; padding: 60px 36px 28px; margin: 0;">
                 Hero let's you...</h3>
@@ -91,7 +97,7 @@
               <table>
                 <tr style="display: flex; justify-content:space-around; padding: 0 12px 0">
                   <td>
-                    <table class="header-left" width='33.33%' align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table class="left-column" width='33.33%' align="left" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 15px 15px 70px 15px;">
                       <tr>
                         <td>
@@ -126,7 +132,7 @@
                     </table>
                     <!-- end of left column -->
                     <!-- start of middle column -->
-                    <table class="header-left" width='33.33%' align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table class="middle-column" width='33.33%' align="left" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 15px 15px 70px 15px;">
                       <tr>
                         <td>
@@ -161,7 +167,7 @@
                     </table>
                     <!-- end of middle column -->
                     <!-- start of right column -->
-                    <table class="header-left" width='33.33%' align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table class="right-column" width='33.33%' align="left" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 15px 15px 70px 15px;">
                       <tr>
                         <td>
@@ -197,7 +203,6 @@
                   </td>
                 </tr>
               </table>
-
               <!-- end of right column -->
             </td>
           </tr>
@@ -268,7 +273,7 @@
           <!-- start of one app row -->
           <tr>
             <td>
-              <table width="100%" style="background: #141414;">
+              <table class="one-app-table" width="100%" style="background: #141414;">
                 <tr>
                   <td>
                     <table style="padding: 10px 10px">
@@ -285,18 +290,20 @@
           <!-- start of joined together row -->
           <tr>
             <td style="background: #FFFEFF; padding: 20px 36px 72px">
+              <!-- MAY NEED TO WRAP THIS SECTION IN A TABLE TO INCLUDE THE H3 WITH THE COLUMN TABLES -->
               <h3
                 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 36px; font-weight: 300; text-transform:none; font-size: 28px; text-align:center; padding: 60px 36px 28px; margin: 0;">
                 Features <span style="font-weight: 400;">All Joined Together</span> in One App
               </h3>
               <!-- start of left column -->
-              <table class="joined-together" width='33.33%' align="left" cellspacing="0" cellpadding="0" border="0">
+              <table class="joined-together-left" width='33.33%' align="left" cellspacing="0" cellpadding="0"
+                border="0">
                 <tr style="text-align: center;">
                   <td><img src="img/watch_screen.png" alt=""></td>
                 </tr>
                 <tr style="text-align: center;">
                   <td
-                    style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 400; text-transform: uppercase; font-size: 12px;">
+                    style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333;  font-weight: 400; text-transform: uppercase; font-size: 12px;">
                     <h4>Sync</h4>
                   </td>
                 </tr>
@@ -318,7 +325,8 @@
               </table>
               <!-- end of left column -->
               <!-- start of middle column -->
-              <table class="joined-together" width='33.33%' align="left" cellspacing="0" cellpadding="0" border="0">
+              <table class="joined-together-middle" width='33.33%' align="left" cellspacing="0" cellpadding="0"
+                border="0">
                 <tr style="text-align: center;">
                   <td><img src="img/watch_screen.png" alt=""></td>
                 </tr>
@@ -326,7 +334,7 @@
 
 
                   <td
-                    style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 400; text-transform: uppercase; font-size: 12px; text-align: center;">
+                    style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333;  font-weight: 400; text-transform: uppercase; font-size: 12px; text-align: center;">
                     <h4>Share</h4>
                   </td>
 
@@ -349,17 +357,17 @@
               </table>
               <!-- end of middle column -->
               <!-- start of right column -->
-              <table class="joined-together" width='33.33%' align="left" cellspacing="0" cellpadding="0" border="0">
+              <table class="joined-together-right" width='33.33%' align="left" cellspacing="0" cellpadding="0"
+                border="0">
                 <tr style="text-align:center;">
                   <td><img src="img/watch_screen.png" alt=""></td>
                 </tr>
                 <tr style="text-align:center;">
                   <td
-                    style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 0 0 0 15px; font-weight: 400; text-transform: uppercase; font-size: 12px;">
+                    style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333;  font-weight: 400; text-transform: uppercase; font-size: 12px;">
                     <h4>Stats</h4>
                   </td>
                 </tr>
-
                 <tr style="text-align:center;">
                   <td>
                     <p
@@ -385,7 +393,7 @@
               <table align="center">
                 <tr align="center">
                   <td style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px 40px; padding:60px 46px;">
-                    <table class="header-left" align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table class="perks-table" align="left" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 0;">
                       <tr>
                         <td>
@@ -410,7 +418,7 @@
                         </td>
                       </tr>
                     </table>
-                    <table class="header-left" align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table class="perks-table" align="left" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 0;">
                       <tr>
                         <td>
@@ -435,7 +443,7 @@
                         </td>
                       </tr>
                     </table>
-                    <table class="header-left" align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table class="perks-table" align="left" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 0;">
                       <tr>
                         <td>
@@ -460,7 +468,7 @@
                         </td>
                       </tr>
                     </table>
-                    <table class="header-left" align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table class="perks-table" align="left" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 0;">
                       <tr>
                         <td>
@@ -485,7 +493,7 @@
                         </td>
                       </tr>
                     </table>
-                    <table class="header-left" align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table class="perks-table" align="left" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 0;">
                       <tr>
                         <td>
@@ -510,7 +518,7 @@
                         </td>
                       </tr>
                     </table>
-                    <table class="header-left" align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table class="perks-table" align="left" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 0;">
                       <tr>
                         <td>
@@ -542,12 +550,12 @@
           </tr>
           <!-- end of perks row -->
           <!-- start of interested row -->
-          <tr style="background: rgb(101,255,253);
+          <tr class="interested-row" style="background: rgb(101,255,253);
           background: -moz-linear-gradient(-45deg, rgba(101,255,253,1) 0%, rgba(34,150,238,1) 100%);
           background: -webkit-linear-gradient(-45deg, rgba(101,255,253,1) 0%,rgba(34,150,238,1) 100%);
           background: linear-gradient(135deg, rgba(101,255,253,1) 0%,rgba(34,150,238,1) 100%);">
             <td>
-              <table align="center" style="padding: 20px 88px 80px;">
+              <table class="interested-table" align="center" style="padding: 20px 88px 80px;">
                 <tr>
                   <td
                     style="color: white; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; text-align:center;">
@@ -566,9 +574,9 @@
           </tr>
           <!-- end of interested row -->
           <!-- start of footer -->
-          <tr style="background: #FFFEFF">
+          <tr class="footer" style="background: #FFFEFF">
             <td>
-              <table align="center">
+              <table class="footer-table" align="center">
                 <tr align="center">
                   <td>
                     <h2
@@ -578,7 +586,7 @@
                 </tr>
                 <tr align="center">
                   <td>
-                    <table>
+                    <table class="icon-table">
                       <tr>
                         <td>
                           <img style="padding:2px" src="img/twitter_icon.png" alt="">
