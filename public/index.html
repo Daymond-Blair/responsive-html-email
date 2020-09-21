@@ -9,11 +9,82 @@
   <!-- <link rel="stylesheet" href="/css/styles.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sanswght@300&display=swap" rel="stylesheet">
   <style>
-    @media only screen and (min-width: 960px) {}
+    /* desktop */
+    @media only screen and (min-width: 960px) {
+      /* .container {
+        width: 960px;
 
-    @media only screen and (max-width: 960px) {}
+      } */
 
-    @media only screen and (max-width: 600px) {}
+    }
+
+    /* tablet */
+    @media only screen and (max-width: 960px) {
+      .container {
+        width: 600px;
+      }
+    }
+
+    /* mobile */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100%;
+      }
+
+      .header-left {
+        width: 100%;
+        display: block;
+      }
+
+      .header-right {
+        width: 100%;
+        display: block;
+      }
+
+      /* .lets-you-row table {
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+      } */
+
+      /* .lets-you-row .title-icon {
+        display: none;
+      } */
+
+      .lets-you-row .left-column {
+        width: 50%;
+      }
+
+      .lets-you-row .middle-column {
+        width: 50%;
+      }
+
+      .lets-you-row .right-column {
+        width: 100%;
+      }
+
+      .most-advanced .most-advanced-img {
+        width: 50%;
+      }
+
+      .most-advanced .app-store-table-left {
+        width: 100%;
+        text-align: center;
+      }
+
+      .most-advanced .app-store-table-left .app-img {
+        text-align: center;
+      }
+
+      .most-advanced .app-store-table-right {
+        width: 100%;
+        text-align: center;
+      }
+
+      .most-advanced .app-store-table-right .app-img {
+        text-align: center;
+      }
+    }
   </style>
 </head>
 
@@ -173,7 +244,7 @@
                         <td>
                           <table class="title-icon" width="33.33%" align="left" cellspacing="0" cellpadding="0"
                             border="0" style="padding: 0;">
-                            <tr>
+                            <tr class="lets-you-table">
                               <td>
                                 <img src="img/wifi_icon.png" alt="">
                               </td>
@@ -216,7 +287,7 @@
                   <td
                     style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #333333; padding: 48px 0 5px 0; font-weight: 300; text-transform: uppercase; font-size: 24px;"
                     align="center">
-                    <img src="img/image_head.jpg" alt="">
+                    <img class="most-advanced-img" src="img/image_head.jpg" alt="">
                   </td>
                 </tr>
                 <tr>
@@ -241,7 +312,7 @@
                             of gaming.</p>
                         </td>
                       </tr>
-                      <tr align="right">
+                      <tr class="app-img" align="right">
                         <td><img src="img/appstore.png"></td>
                       </tr>
                     </table>
@@ -256,7 +327,7 @@
                             onscreen cursor in a pinch.</p>
                         </td>
                       </tr>
-                      <tr align="left">
+                      <tr class="app-img" align="left">
                         <td><img src="img/playstore.png"></td>
                       </tr>
 
